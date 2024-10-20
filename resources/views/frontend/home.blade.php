@@ -13,15 +13,15 @@
                 <div class="section_banner py-5">
                     <div class="row banner">
                         <div class="col-md-4 banner--item">
-                            <img src="https://u6wdnj9wggobj.vcdn.cloud/media/mgs_blog/d/e/deal-doc-quyen-website-432x260.jpg"
+                            <img src="{{ asset('images/sale1.jpg') }}"
                                 alt="" class="d-block w-100">
                         </div>
                         <div class="col-md-4 banner--item">
-                            <img src="https://demo.wpthemego.com/themes/sw_coruja/wp-content/uploads/2019/07/bn2.jpg"
+                            <img src="{{ asset('images/sale2.jpg') }}"
                                 alt="" class="d-block w-100">
                         </div>
                         <div class="col-md-4 banner--item">
-                            <img src="https://babykid.vn/wp-content/uploads/2019/11/1.png"
+                            <img src="{{ asset('images/sale3.jpg') }}"
                                 alt="" class="d-block w-100">
                         </div>
                     </div>
@@ -35,10 +35,11 @@
                 <div class="section_banner py-5">
                     <div class="row banner">
                         <div class="col-md-12 banner--item">
-                            <img src="{{ asset('images/bannersale.jpg') }}"
-                                alt="" class="d-block w-100">
+                            <video id="bannerVideo" class="d-block w-100" autoplay muted>
+                                <source src="{{ asset('images/bannersale.mp4') }}" type="video/mp4">
+                                Trình duyệt của bạn không hỗ trợ thẻ video.
+                            </video>
                         </div>
-
                     </div>
                 </div>
                 <div class="category_product py-5">
@@ -50,5 +51,15 @@
         </div>
 
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('bannerVideo');
+            video.addEventListener('ended', function () {
+                setTimeout(function () {
+                    video.play();
+                }, 3000); // 3000 milliseconds = 3 seconds
+            });
+        });
+    </script>
 
 @endsection

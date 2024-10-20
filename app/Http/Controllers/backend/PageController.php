@@ -23,7 +23,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $title = 'Tất cả giới thiệu';
+        $title = 'Tất cả chính sách';
         $list_page = Post::where([['post.status', '<>', '0'], ['post.type', '=', 'page']])
             ->orderBy('post.created_at', 'desc')->get();
 

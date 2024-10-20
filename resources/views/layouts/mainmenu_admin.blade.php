@@ -155,7 +155,7 @@
                        <li class="nav-item">
                            <a href="{{ route('page.index') }}" class="nav-link">
                                <i class="far fa-circle nav-icon"></i>
-                               <p>Giới thiệu</p>
+                               <p>Chính sách</p>
                            </a>
                        </li>
 

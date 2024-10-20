@@ -144,7 +144,7 @@
                                         <li class="nav-item footer-custom__item">
                                             <span class="txt_contact">
                                                 <span class="footer-custom__item--hotline">Hotline: </span><a
-                                                    href="0918146697" class="footer-custom__item--link">0379365550</a>
+                                                    href="0" class="footer-custom__item--link">0379365550</a>
                                             </span>
                                             <span class="line"> | </span>
                                             <span class="txt_contact">
